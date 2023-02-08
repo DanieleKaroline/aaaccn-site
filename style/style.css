@@ -294,6 +294,12 @@ form {
     border: none;
     cursor: pointer;
   }
+  input[type="reset"] {
+    background-color: #6a4caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
   input[type="file"] {
     padding: 10px;
     background-color: #f2f2f2;
@@ -304,4 +310,7 @@ form {
     margin-top: 5%;
     text-align: center;
     align-items: center;
+  }
+  #form-member{
+    margin-top: 10%;
   }
