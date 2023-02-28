@@ -1,49 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- h:nos forms. -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Navegadores</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <section id="home">
-        <nav class="nav">
-            <div class="container">
-                <div class="navegadores">
-                    <a href="#home">Navegadores</a>
-                </div>
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Produtos</a></li>
-                        <li><a href="contact.html">Contate-nos</a></li>
-                        <li><a href="member.html">Seja Membro</a></li>
-                    </ul>
-                </div>
+   <section id="home">
+    <nav class="nav">
+        <div class="container">
+            <div class="navegadores">
+                <a href="index.html">Navegadores</a>
             </div>
-          </nav>
-          <div class="banner" style="width: 100%;">
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produtos</a></li>
+                    <li><a href="contact.html">Contate-nos</a></li>
+                    <li><a href="member.html">Seja Membro</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <div class="banner" style="width: 100%;">
             <h2>Seja Membro</h2>
           </div>
        </section>
+       <br></br><br></br>
+       <h3 style="text-align: center;">Preencha o formulário!</h3>
        <section id="form-member">
         <div class="form-contat">
             <form action="#">
-              <input type="number" placeholder="Matrícula" required><br><br>
-              <input type="text" placeholder="Nome" required><br><br>
+              <input type="number" placeholder="Matrícula" value="" required="true"></input><br></br><br></br>
+              <input type="text" placeholder="Nome" value="" required="true"></input><br></br><br></br>
               <label>Data de Nascimento:</label>
-              <input type="date" placeholder="Data de Nascimento" required><br><br>
-              <input type="email" placeholder="Email" required><br><br>
-              <input type="tel" placeholder="Telefone" required><br><br>
-              <input type="text" placeholder="Endereço" required><br><br>
-              <input type="text" placeholder="Alergia ou Condição"><br><br>
+              <input type="date" placeholder="Data de Nascimento" value="" required="true"></input><br></br><br></br>
+              <input type="email" placeholder="Email" value="" required="true"></input><br></br><br></br>
+              <input type="tel" placeholder="Telefone" value="" required="true"></input><br></br><br></br>
+              <input type="text" placeholder="Endereço"  value="" required="true"></input><br></br><br></br>
+              <input type="text" placeholder="Alergia ou Condição" value=""></input><br></br><br></br>
               <label for="curso">Selecione seu Curso: </label>
-              <select id="cursi" name="curso">
+              <!-- ver como fica o controller para o option -->
+              <select id="curso" name="curso">
                 <option value="agro">Agronomia</option>
                 <option value="cc">Ciência da Computação</option>
                 <option value="enga">Engenharia Ambiental</option>
@@ -52,33 +56,43 @@
                 <option value="let">Letras</option>
                 <option value="mat">Matemática</option>
                 <option value="ped">Pedagogia</option>
-              </select><br><br>
+              </select><br></br>
 
-              <label for="selmod">Selecione a sua forma de participação na AAACCN</label><br><br>
-              <input class="a" type="checkbox" name="option1" value="Option 1"> Apenas Membro<br>
-              <input class="a" type="checkbox" name="option2" value="Option 2"> Membro e Treinante<br>
-              <input class="a" type="checkbox" name="option3" value="Option 3"> Membro e Atleta<br>
+              <label for="selmod">Selecione a sua forma de participação na AAACCN</label><br></br>
+              <input class="a" type="checkbox" name="option1" value="Option 1"> Apenas Membro</input><br></br><br></br>
+              <input class="a" type="checkbox" name="option2" value="Option 2"> Membro e Treinante</input><br></br><br></br>
+              <input class="a" type="checkbox" name="option3" value="Option 3"> Membro e Atleta</input><br></br><br></br>
 
-              <input type="reset"> <br><br>
-              <input type="submit" value="Enviar"><br><br>
+              <input type="reset"></input><br></br><br></br>
+              <input type="submit" value="Enviar"></input><br></br><br></br>
             </form>
         </div>
        </section>
 
-       <section id="footer" style="margin-top: 40%; padding: 3%; background-color: #3b3b3b;">
-        <div class="grid text-center">
-          <div class="g-col-4">
-            <img src="style/icon-raposa-color.png" width="80" height="80"><br><br>
-            <a href="https://cc.uffs.edu.br/"><img src="style/logo-cc.png" width="80" height="80"></a>
-          </div>  
-          <div class="g-col-4">
-            <a href=""><img src="style/local.png" width="30" height="30"></a>
-          </div>  
-          <div class="g-col-4">
-            <a href=""><img src="style/instagram.png" width="30" height="30"></a>
-          </div>  
-        </div>
-      </section>
-
-  </body>
-  </html>
+       <section id="footer" style="margin-top: 25%; padding: 3%; background-color: #4d4d4d;">
+      <div class="grid text-center">
+        <div class="g-col-4">
+          <img src="style/icon-raposa-color.png" width="70" height="70"/><br></br><br></br>
+          <a href="https://cc.uffs.edu.br/"><img src="style/logo-cc.png" width="70" height="70"/></a>
+          <br></br> 
+          <p>Acesse a página do curso!</p>
+        </div>  
+        <div class="g-col-4">
+          <a href=""><img src="style/local.png" width="40" height="40"/></a><br></br><br></br>
+          <p>Rodovia SC 484 Km 02, Bairro Fronteira Sul; 89815899, Chapecó - SC</p>
+          <br></br>
+          <a href=""><img src="style/instagram.png" width="40" height="40"/></a> 
+        </div>  
+        <div class="g-col-4">
+          <img src="style/group.png" width="40" height="40"/><br></br><br></br>
+          <p>A AAACCN (Associação Atlética Acadêmica de Ciência da Computação Navegadores) surgiu em Agosto de 2021, dentro da UFFS, Chapecó, com o objetivo
+          de trazer novidades, lazer, esportes e acolhimento para os discentes de CC.
+          
+          </p> 
+        </div> 
+        <div class="g-col-4">
+        </div>  
+      </div>
+    </section>
+</body>
+</html>
